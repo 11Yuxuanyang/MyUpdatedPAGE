@@ -10,7 +10,7 @@
             <!-- Video Column -->
             <div class="lg:col-span-1">
               <div class="rounded-lg overflow-hidden shadow-xl aspect-video bg-dark-surface mb-6">
-                <img class="w-full h-full object-cover" src="/images/EGO/ego_cover.jpg" alt="EGO平台预览">
+                <img class="w-full h-full object-cover" src="/images/EGO/截屏2025-05-04 上午10.19.38.png" alt="EGO平台预览">
               </div>
               <h2 class="text-2xl font-bold text-purple-400 mb-2 text-center lg:text-left">EGO</h2>
               <p class="text-gray-400 text-center lg:text-left">AI驱动的教育平台</p>

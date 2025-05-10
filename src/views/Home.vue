@@ -175,7 +175,7 @@
           <!-- EGO -->
           <div class="bg-dark-card rounded-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-purple group">
             <div class="aspect-video bg-dark-surface flex items-center justify-center overflow-hidden relative">
-              <img class="absolute inset-0 w-full h-full object-cover transform transition-all duration-500 group-hover:scale-105" src="/images/EGO/ego_cover.jpg" alt="EGO平台预览">
+              <img class="absolute inset-0 w-full h-full object-cover transform transition-all duration-500 group-hover:scale-105" src="/images/EGO/截屏2025-05-04 上午10.19.38.png" alt="EGO平台预览">
               <div class="absolute inset-0 bg-black opacity-0 transition-all duration-500 group-hover:opacity-20"></div>
               <div class="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-black to-transparent opacity-0 transition-all duration-300 group-hover:h-1/3 group-hover:opacity-50"></div>
             </div>
@@ -421,7 +421,7 @@
             <!-- 视频卡片 1 -->
             <div class="bg-dark-card rounded-lg overflow-hidden">
               <div class="aspect-video bg-gray-900 flex items-center justify-center relative">
-                <img class="w-full h-full object-cover" src="/images/EGO/ego_cover.jpg" alt="EGO平台预览">
+                <img class="w-full h-full object-cover" src="/images/EGO/截屏2025-05-04 上午10.19.38.png" alt="EGO平台预览">
               </div>
               <div class="p-6">
                 <h4 class="text-xl font-bold text-white mb-2">爆款短视频案例</h4>
