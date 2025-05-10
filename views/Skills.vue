@@ -1,0 +1,252 @@
+<template>
+  <div class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h1 class="text-3xl md:text-4xl font-bold text-primary text-center mb-16">专业技能</h1>
+      
+      <!-- 技能分类 -->
+      <div class="mb-16">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div 
+            v-for="(category, index) in skillCategories" 
+            :key="index" 
+            class="card hover:shadow-lg transition-all duration-300"
+            :class="{ 'border-primary border-2': activeCategory === category.name }"
+            @click="activeCategory = category.name"
+          >
+            <div class="p-6 flex flex-col items-center text-center cursor-pointer">
+              <div class="w-16 h-16 rounded-full bg-primary-light flex items-center justify-center mb-4">
+                <component :is="category.icon" class="h-8 w-8 text-white" />
+              </div>
+              <h3 class="text-xl font-semibold mb-2">{{ category.name }}</h3>
+              <p class="text-gray-600">{{ category.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 技能详情 -->
+      <div>
+        <div v-for="(category, catIndex) in skillCategories" :key="catIndex" v-show="activeCategory === category.name || activeCategory === '全部'">
+          <h2 class="text-2xl font-bold text-primary mb-8">{{ category.name }}</h2>
+          
+          <div class="mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div v-for="(skill, index) in getSkillsByCategory(category.name)" :key="index" class="card">
+                <div class="p-6">
+                  <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg font-semibold">{{ skill.name }}</h3>
+                    <div class="flex space-x-1">
+                      <div 
+                        v-for="i in 5" 
+                        :key="i" 
+                        :class="[
+                          i <= skill.level ? 'bg-primary' : 'bg-gray-200',
+                          'w-2 h-8 rounded-sm'
+                        ]"
+                      ></div>
+                    </div>
+                  </div>
+                  
+                  <p class="text-gray-600 mb-4">{{ skill.description }}</p>
+                  
+                  <div class="flex flex-wrap gap-2">
+                    <span 
+                      v-for="(tag, tagIndex) in skill.tags" 
+                      :key="tagIndex" 
+                      class="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-700"
+                    >
+                      {{ tag }}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 其他技能 -->
+      <div class="mt-12">
+        <h2 class="text-2xl font-bold text-center text-gray-800 mb-10">其他技能</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div v-for="(skill, index) in otherSkills" :key="index" class="card text-center py-6">
+            <h3 class="text-lg font-medium text-gray-800">{{ skill }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Skills',
+  data() {
+    return {
+      activeCategory: '编程技术',
+      skillCategories: [
+        {
+          name: '编程技术',
+          description: '用于开发和构建应用程序的编程语言和技术',
+          icon: 'CpuChipIcon'
+        },
+        {
+          name: '实验室技能',
+          description: '在生物学和医学研究中使用的实验室技术',
+          icon: 'BeakerIcon'
+        },
+        {
+          name: '产品与管理',
+          description: '产品开发、销售和管理相关技能',
+          icon: 'DatabaseIcon'
+        }
+      ],
+      skills: [
+        {
+          name: 'Go',
+          category: '编程技术',
+          level: 4,
+          description: '熟练使用Go进行高性能、并发应用开发，如城市交通网络模拟。',
+          tags: ['并发编程', '性能优化', '后端开发']
+        },
+        {
+          name: 'Python',
+          category: '编程技术',
+          level: 5,
+          description: '精通Python及其科学计算库，用于数据分析、机器学习和研究。',
+          tags: ['数据分析', '机器学习', 'TensorFlow', 'pandas']
+        },
+        {
+          name: 'Vue.js',
+          category: '编程技术',
+          level: 4,
+          description: '熟练使用Vue.js (2/3) 构建响应式前端应用，包括EGO平台和微信小程序。',
+          tags: ['前端开发', '组件设计', 'Vuex', 'Vue Router']
+        },
+        {
+          name: 'React',
+          category: '编程技术',
+          level: 3,
+          description: '具有使用React构建用户界面的经验，了解组件生命周期和Hooks。',
+          tags: ['前端框架', 'UI组件', 'React Hooks']
+        },
+        {
+          name: 'MySQL',
+          category: '编程技术',
+          level: 3,
+          description: '熟悉关系型数据库设计和查询优化，用于支持各种Web应用。',
+          tags: ['数据库设计', 'SQL查询', '性能优化']
+        },
+        {
+          name: 'JavaScript',
+          category: '编程技术',
+          level: 4,
+          description: '精通ES6+特性，能够开发现代Web应用和脚本。',
+          tags: ['前端开发', 'ES6+', '异步编程']
+        },
+        {
+          name: '微信小程序',
+          category: '编程技术',
+          level: 4,
+          description: '经验丰富的微信小程序开发者，开发了多个实用的小程序应用。',
+          tags: ['移动开发', 'WXML', 'WXSS', '小程序API']
+        },
+        {
+          name: '细胞培养',
+          category: '实验室技能',
+          level: 4,
+          description: '熟练进行多种细胞类型的培养，包括原代细胞和细胞系。',
+          tags: ['无菌技术', '细胞传代', '细胞冻存']
+        },
+        {
+          name: 'DNA/RNA提取',
+          category: '实验室技能',
+          level: 5,
+          description: '精通从各种组织和细胞中提取高质量核酸的技术。',
+          tags: ['离心分离', '梯度纯化', '定量分析']
+        },
+        {
+          name: 'PCR技术',
+          category: '实验室技能',
+          level: 4,
+          description: '熟练应用PCR及其变体技术进行基因扩增和分析。',
+          tags: ['实时PCR', '引物设计', '基因扩增']
+        },
+        {
+          name: '凝胶电泳',
+          category: '实验室技能',
+          level: 4,
+          description: '熟练使用琼脂糖和聚丙烯酰胺凝胶电泳分离和分析核酸和蛋白质。',
+          tags: ['样品制备', '电泳分析', '染色技术']
+        },
+        {
+          name: '营销与沟通',
+          category: '产品与管理',
+          level: 4,
+          description: '具备有效的营销策略制定和沟通能力，用于推广产品和服务。',
+          tags: ['市场策略', '客户沟通', '品牌建设']
+        },
+        {
+          name: '网站与小程序开发',
+          category: '产品与管理',
+          level: 5,
+          description: '精通Web和微信小程序的全栈开发，能够从概念到交付完成整个开发流程。',
+          tags: ['全栈开发', 'UI/UX设计', '响应式设计']
+        },
+        {
+          name: '团队管理',
+          category: '产品与管理',
+          level: 3,
+          description: '具有管理小型团队的经验，能够指导和协调团队成员实现共同目标。',
+          tags: ['项目协调', '任务分配', '团队建设']
+        },
+        {
+          name: '图形设计',
+          category: '产品与管理',
+          level: 3,
+          description: '能够创建视觉吸引力强的设计，用于品牌推广和产品展示。',
+          tags: ['品牌设计', '视觉内容', '用户界面']
+        }
+      ],
+      otherSkills: [
+        '社交媒体内容创作', 
+        '图形设计', 
+        '流利的英语', 
+        '公开演讲', 
+        '数据可视化', 
+        '项目管理', 
+        '用户研究', 
+        'UX/UI设计'
+      ]
+    }
+  },
+  methods: {
+    getSkillsByCategory(category) {
+      return this.skills.filter(skill => skill.category === category);
+    }
+  },
+  components: {
+    CpuChipIcon: {
+      template: `
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+        </svg>
+      `
+    },
+    DatabaseIcon: {
+      template: `
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+        </svg>
+      `
+    },
+    BeakerIcon: {
+      template: `
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+        </svg>
+      `
+    }
+  }
+}
+</script>

@@ -1,0 +1,143 @@
+<template>
+  <div class="bg-gradient-to-b from-primary-light to-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl md:text-4xl font-bold text-white text-center mb-16">联系我</h1>
+      
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+          <!-- 头部信息 -->
+          <div class="bg-primary p-8 flex flex-col items-center">
+            <div class="w-32 h-32 rounded-full bg-white shadow-xl overflow-hidden border-4 border-white mb-4">
+              <!-- 头像占位符 -->
+              <div class="w-full h-full bg-primary-light flex items-center justify-center">
+                <span class="text-4xl font-bold text-white">YY</span>
+              </div>
+            </div>
+            <h2 class="text-2xl font-bold text-white">杨宇轩</h2>
+            <p class="text-white opacity-90">卡内基梅隆大学 自动化科学硕士生</p>
+          </div>
+          
+          <!-- 联系信息 -->
+          <div class="p-8">
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div class="bg-primary-light bg-opacity-20 rounded-full p-2">
+                    <svg class="h-6 w-6 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-900">电子邮件</h3>
+                  <a href="mailto:yuxuany2@andrew.cmu.edu" class="text-primary hover:text-primary-dark">yuxuany2@andrew.cmu.edu</a>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div class="bg-primary-light bg-opacity-20 rounded-full p-2">
+                    <svg class="h-6 w-6 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-900">电话</h3>
+                  <p class="text-gray-600">15547160513</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div class="bg-primary-light bg-opacity-20 rounded-full p-2">
+                    <svg class="h-6 w-6 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-900">位置</h3>
+                  <p class="text-gray-600">卡内基梅隆大学, 匹兹堡, 宾夕法尼亚州, 美国</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 社交媒体链接 -->
+            <div class="mt-8 border-t border-gray-200 pt-8">
+              <h3 class="text-lg font-medium text-gray-900 mb-4">社交媒体</h3>
+              <div class="flex space-x-4">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-primary">
+                  <span class="sr-only">GitHub</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-primary">
+                  <span class="sr-only">LinkedIn</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79zM6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68zM8.27 18.5v-8.37H5.5v8.37h2.77z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-primary">
+                  <span class="sr-only">微信</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.328.328 0 00.166-.054l1.89-1.14a.590.59 0 01.397-.08 9.5 9.5 0 003.170.538c.23 0 .441-.027.664-.036a6.009 6.009 0 01-.264-1.764c0-3.754 3.577-6.989 8.091-6.989.283 0 .541.027.811.054C17.13 4.471 13.355 2.188 8.691 2.188zm-.358 4.656a1.18 1.18 0 11.002 2.362 1.18 1.18 0 01-.002-2.362zm4.734 0a1.18 1.18 0 11.002 2.362 1.18 1.18 0 01-.002-2.362z" />
+                    <path d="M23.992 15.016c0-3.316-3.373-6.003-7.525-6.003s-7.525 2.687-7.525 6.003c0 3.316 3.373 6.002 7.525 6.002.838 0 1.646-.106 2.386-.307a.444.444 0 01.304.06l1.418.854a.249.249 0 00.124.042c.122 0 .219-.1.219-.222 0-.053-.016-.084-.037-.124l-.293-1.112a.445.445 0 01.16-.499c1.373-1.013 2.219-2.491 2.219-4.127 0-.018-.006-.035-.007-.053h-.002a.586.586 0 01.018-.139.512.512 0 01.016-.084zm-9.984-.97c-.717 0-1.299-.597-1.299-1.342 0-.744.582-1.348 1.299-1.348.717 0 1.3.604 1.3 1.348 0 .746-.583 1.343-1.3 1.343zm4.912 0c-.717 0-1.3-.597-1.3-1.342 0-.744.583-1.348 1.3-1.348.717 0 1.299.604 1.299 1.348 0 .746-.582 1.343-1.3 1.343z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 联系表单 -->
+        <div class="mt-12 bg-white rounded-lg shadow-xl overflow-hidden">
+          <div class="p-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">发送消息</h2>
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-2">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700">姓名</label>
+                  <div class="mt-1">
+                    <input type="text" name="name" id="name" class="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 rounded-md">
+                  </div>
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700">电子邮件</label>
+                  <div class="mt-1">
+                    <input type="email" name="email" id="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 rounded-md">
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="subject" class="block text-sm font-medium text-gray-700">主题</label>
+                  <div class="mt-1">
+                    <input type="text" name="subject" id="subject" class="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 rounded-md">
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="message" class="block text-sm font-medium text-gray-700">消息</label>
+                  <div class="mt-1">
+                    <textarea id="message" name="message" rows="4" class="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border-gray-300 rounded-md"></textarea>
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                    发送
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Contact'
+}
+</script> 

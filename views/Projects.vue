@@ -1,0 +1,220 @@
+<template>
+  <div class="bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h1 class="text-3xl md:text-4xl font-bold text-primary text-center mb-16">项目与研究经历</h1>
+      
+      <!-- 项目分类选项卡 -->
+      <div class="flex justify-center mb-12">
+        <div class="inline-flex rounded-md shadow-sm">
+          <button 
+            v-for="(category, index) in categories" 
+            :key="category"
+            @click="activeCategory = category" 
+            :class="[
+              activeCategory === category 
+                ? 'bg-primary text-white' 
+                : 'bg-white text-gray-700 hover:bg-gray-50',
+              index === 0 ? 'rounded-l-md' : '',
+              index === categories.length - 1 ? 'rounded-r-md' : '',
+              'px-4 py-2 text-sm font-medium border border-gray-300'
+            ]"
+          >
+            {{ category }}
+          </button>
+        </div>
+      </div>
+      
+      <!-- 项目卡片 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div 
+          v-for="(project, index) in filteredProjects" 
+          :key="index"
+          class="card hover:shadow-xl transition-all duration-300 flex flex-col"
+        >
+          <div class="h-48 rounded-t-lg" :class="[`bg-${project.color}`]">
+            <div class="h-full w-full flex items-center justify-center p-6">
+              <h3 class="text-2xl font-bold text-white text-center">{{ project.title }}</h3>
+            </div>
+          </div>
+          
+          <div class="p-6 flex-grow">
+            <div class="flex justify-between items-start mb-4">
+              <p class="text-gray-500">{{ project.date }}</p>
+              <span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs font-medium rounded-full">
+                {{ project.category }}
+              </span>
+            </div>
+            
+            <p class="text-gray-600 mb-4">{{ project.description }}</p>
+            
+            <div class="space-y-4">
+              <div v-if="project.highlights && project.highlights.length">
+                <h4 class="font-medium mb-2">亮点</h4>
+                <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                  <li v-for="(item, i) in project.highlights" :key="i">
+                    {{ item }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="px-6 pb-6">
+            <div class="mt-4">
+              <h4 class="font-medium mb-2">技术 & 工具</h4>
+              <div class="flex flex-wrap gap-2">
+                <span 
+                  v-for="(tag, tagIndex) in project.technologies" 
+                  :key="tagIndex" 
+                  class="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-700"
+                >
+                  {{ tag }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 研究培训部分 -->
+      <div class="mt-20" v-if="activeCategory === '全部' || activeCategory === '研究培训'">
+        <h2 class="text-2xl font-bold text-primary mb-8">研究培训经历</h2>
+        <div class="space-y-8">
+          <div v-for="(research, index) in researchTrainings" :key="index" class="card">
+            <div class="flex flex-col md:flex-row">
+              <div class="md:w-1/3 mb-4 md:mb-0 md:pr-6">
+                <h3 class="text-xl font-semibold mb-2">{{ research.title }}</h3>
+                <p class="text-gray-500 mb-4">{{ research.date }}</p>
+                <div class="flex flex-wrap gap-2">
+                  <span 
+                    v-for="(tag, tagIndex) in research.tags" 
+                    :key="tagIndex" 
+                    class="px-3 py-1 bg-primary bg-opacity-10 rounded-full text-xs text-primary"
+                  >
+                    {{ tag }}
+                  </span>
+                </div>
+              </div>
+              
+              <div class="md:w-2/3 md:border-l md:border-gray-200 md:pl-6">
+                <p class="text-gray-600 mb-4">{{ research.description }}</p>
+                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                  <li v-for="(item, i) in research.activities" :key="i">
+                    {{ item }}
+                  </li>
+                </ul>
+                
+                <div v-if="research.outcomes" class="mt-4 pt-4 border-t border-gray-100">
+                  <h4 class="font-medium mb-2">研究成果</h4>
+                  <p class="text-gray-600">{{ research.outcomes }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Projects',
+  data() {
+    return {
+      activeCategory: '全部',
+      categories: ['全部', '技术项目', '研究培训'],
+      projects: [
+        {
+          title: '黑八追分 - 微信小程序',
+          date: '2025/03 - 至今',
+          category: '技术项目',
+          color: 'primary',
+          description: '开发了一款用于实时多人（2-4人）8球台球比赛计分的微信小程序，支持复杂规则包括负分追踪。',
+          highlights: [
+            '使用Vue 3和uniapp构建前端，实现高效跨平台部署，专为微信环境优化。',
+            '使用可复用的Vue组件设计UI，优化玩家选择、得分编辑和游戏控制的用户体验。'
+          ],
+          technologies: ['Vue 3', 'uniapp', '微信小程序', '前端开发', 'WeUI']
+        },
+        {
+          title: '基于Go的粘菌城市交通网络模拟',
+          date: '2024/08 - 2024/12',
+          category: '技术项目',
+          color: 'secondary',
+          description: '开发了一个Go语言模拟程序，模拟粘菌（Physarum polycephalum）寻路行为，探索高效城市交通网络设计。',
+          highlights: [
+            '使用Go实现核心逻辑，以东京地铁图为环境，以车站位置作为代理起点。',
+            '管理并行代理移动和实时信息素动态。',
+            '应用生物启发式算法模拟车站间的最优路径查找，展示了一种可视化潜在交通网络结构的新方法。',
+            '为地图网格上的大量代理优化了数据结构，利用Go的并发（goroutines）提高性能。'
+          ],
+          technologies: ['Go', '并发编程', '生物模拟', '城市规划', '优化算法']
+        },
+        {
+          title: '使用机器学习模型和传感器数据预测奶牛乳腺炎发病',
+          date: '2023/07 - 2023/10',
+          category: '研究培训',
+          color: 'primary-dark',
+          description: '在内蒙古大学丁瀚教授研究组担任研究助理，利用机器学习技术预测奶牛乳腺炎的发生。',
+          highlights: [
+            '协助高级博士生整理收集的传感器数据，包括288头泌乳牛在两个农场7天内的日产奶量、活动量、反刍时间、反刍模式和电导率数据，其中109头诊断为乳腺炎。',
+            '通过比较健康组和乳腺炎组之间的数据，识别差异趋势和关键预测特征。',
+            '在多维传感器数据上应用决策树、随机森林、XGBoost和逻辑回归模型来预测乳腺炎发生。',
+            '证明随机森林模型具有最佳预测性能（在测试数据上达到0.83准确率和0.96 AUC-ROC）。',
+            '成功协助该组并开发了一个机器学习框架，利用实时传感器数据进行早期乳腺炎预测。'
+          ],
+          technologies: ['Python', '机器学习', '随机森林', 'XGBoost', '数据分析', '特征工程']
+        },
+        {
+          title: 'CT扫描中肺结节的自动检测',
+          date: '2023/09 - 2023/12',
+          category: '技术项目',
+          color: 'primary',
+          description: '开发并实现了一个3D CNN模型，自动从CT扫描中检测肺结节，辅助早期诊断。',
+          highlights: [
+            '在公共LIDC-IDRI数据集的1,018个带注释的CT扫描上训练模型。',
+            '在训练阶段引入残差连接以改善模型收敛。',
+            '使用准确率、精确率、召回率等指标在测试集上评估模型性能。',
+            '在30个扫描的测试集上达到49%的准确率。'
+          ],
+          technologies: ['Python', '深度学习', '卷积神经网络', '医学影像', 'TensorFlow']
+        }
+      ],
+      researchTrainings: [
+        {
+          title: '研究小鼠棕色脂肪细胞发育和功能中线粒体RNA的作用',
+          date: '2022/07 - 2022/12',
+          tags: ['分子生物学', '细胞生物学', '实验技术'],
+          description: '参与了调查小鼠棕色脂肪细胞发育和功能中线粒体RNA作用的研究项目。',
+          activities: [
+            '进行动物实验，包括剪尾进行基因分型和解剖获取脂肪组织。',
+            '进行PCR扩增从分离的小鼠组织和细胞中提取的mtRNA。',
+            '研究脂肪细胞分化，以了解mtRNA在棕色脂肪细胞发育中的作用。'
+          ]
+        },
+        {
+          title: 'CT扫描中肺结节的自动检测',
+          date: '2023/09 - 2023/12',
+          tags: ['深度学习', '医学影像', '计算机视觉'],
+          description: '开发了一个自动检测系统，通过计算机视觉技术帮助医生从CT扫描中识别可能的肺结节。',
+          activities: [
+            '利用公共LIDC-IDRI数据集的1,018个带注释CT扫描训练3D CNN模型。',
+            '实现残差连接以改善神经网络训练过程中的梯度流。',
+            '使用多种评估指标测试和优化模型性能。'
+          ],
+          outcomes: '最终模型在30个扫描的测试集上达到49%的准确率，为肺结节自动检测提供了基础框架。'
+        }
+      ]
+    }
+  },
+  computed: {
+    filteredProjects() {
+      if (this.activeCategory === '全部') {
+        return this.projects;
+      }
+      return this.projects.filter(project => project.category === this.activeCategory);
+    }
+  }
+}
+</script> 
