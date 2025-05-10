@@ -86,7 +86,7 @@
         <div class="relative pl-8 space-y-16">
           <!-- 2020-2022 SWJTU -->
           <div class="flex items-start">
-            <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mr-6">1</div>
+            <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold mr-6">1</div>
             <div>
               <h3 class="text-2xl font-semibold text-white mb-2">西南交通大学（SWJTU）</h3>
               <p class="text-gray-200 mb-1">生物工程学士（双学位项目） | 2020/09 - 2022/06</p>
@@ -95,7 +95,7 @@
           </div>
           <!-- 2022-2024 GSU -->
           <div class="flex items-start">
-            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-6">2</div>
+            <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold mr-6">2</div>
             <div>
               <h3 class="text-2xl font-semibold text-white mb-2">乔治亚州立大学（GSU）</h3>
               <p class="text-gray-200 mb-1">生物科学学士，数学辅修 | 2022/08 - 2024/06</p>
@@ -104,7 +104,7 @@
           </div>
           <!-- 2024-至今 CMU -->
           <div class="flex items-start">
-            <div class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-black font-bold mr-6">3</div>
+            <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold mr-6">3</div>
             <div>
               <h3 class="text-2xl font-semibold text-white mb-2">卡内基梅隆大学（CMU）</h3>
               <p class="text-gray-200 mb-1">自动化科学硕士 | 2024/08 - 至今</p>
@@ -113,7 +113,7 @@
           </div>
           <!-- 科研/项目/获奖 -->
           <div class="flex items-start">
-            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-6">4</div>
+            <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold mr-6">4</div>
             <div>
               <h3 class="text-2xl font-semibold text-white mb-2">科研与项目实践</h3>
               <ul class="list-disc pl-5 text-gray-200 space-y-1">
@@ -125,7 +125,7 @@
           </div>
           <!-- 2023-至今 创业 -->
           <div class="flex items-start">
-            <div class="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold mr-6">5</div>
+            <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold mr-6">5</div>
             <div>
               <h3 class="text-2xl font-semibold text-white mb-2">创业与自我突破</h3>
               <ul class="list-disc pl-5 text-gray-200 space-y-1">
