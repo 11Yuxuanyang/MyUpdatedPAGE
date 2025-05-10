@@ -10,9 +10,7 @@
             <!-- Video Column -->
             <div class="lg:col-span-1">
               <div class="rounded-lg overflow-hidden shadow-xl aspect-video bg-dark-surface mb-6">
-                <video class="w-full h-full object-cover" src="/images/EGO/录屏2025-05-10 上午2.10.15.mov?url" controls autoplay muted loop playsinline>
-                  Your browser does not support the video tag.
-                </video>
+                <img class="w-full h-full object-cover" src="/images/EGO/ego_cover.jpg" alt="EGO平台预览">
               </div>
               <h2 class="text-2xl font-bold text-purple-400 mb-2 text-center lg:text-left">EGO</h2>
               <p class="text-gray-400 text-center lg:text-left">AI驱动的教育平台</p>
