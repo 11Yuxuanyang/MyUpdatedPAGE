@@ -81,6 +81,7 @@ export default {
       mobileMenuOpen: false,
       primaryNavItems: [
         { name: '关于', path: '/about' },
+        { name: '了解更多', path: '/about' },
         { name: '作品', path: '/projects' },
         { name: '博客', path: '/blog' },
         { name: '联系', path: '/contact' }
