@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "start": "node server.js"
+    "start": "node server.js",
+    "vercel-build": "vite build"
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.18",
