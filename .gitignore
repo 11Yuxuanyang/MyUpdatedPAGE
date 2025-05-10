@@ -1,1 +1,8 @@
 node_modules/
+*.mov
+*.mp4
+*.avi
+*.wmv
+*.flv
+*.webm
+*.m4v
