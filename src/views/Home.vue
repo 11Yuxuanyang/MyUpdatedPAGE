@@ -101,18 +101,18 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold text-white mb-4">成长之路 Journey</h2>
-          <p class="text-xl text-dark-text-secondary max-w-3xl mx-auto">
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
             从生物工程到人工智能，从学术科研到创业实践，见证我的每一次跨界成长与突破。
           </p>
         </div>
-        <div class="relative border-l-4 border-purple-500 pl-8 space-y-16">
+        <div class="relative pl-8 space-y-16">
           <!-- 2020-2022 SWJTU -->
           <div class="flex items-start">
             <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mr-6">1</div>
             <div>
               <h3 class="text-2xl font-semibold text-white mb-2">西南交通大学（SWJTU）</h3>
-              <p class="text-gray-300 mb-1">生物工程学士（双学位项目） | 2020/09 - 2022/06</p>
-              <p class="text-gray-400 mb-2">主修分子生物学、前沿生物技术，打下坚实的科研基础。</p>
+              <p class="text-gray-200 mb-1">生物工程学士（双学位项目） | 2020/09 - 2022/06</p>
+              <p class="text-gray-300 mb-2">主修分子生物学、前沿生物技术，打下坚实的科研基础。</p>
             </div>
           </div>
           <!-- 2022-2024 GSU -->
@@ -120,8 +120,8 @@
             <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-6">2</div>
             <div>
               <h3 class="text-2xl font-semibold text-white mb-2">乔治亚州立大学（GSU）</h3>
-              <p class="text-gray-300 mb-1">生物科学学士，数学辅修 | 2022/08 - 2024/06</p>
-              <p class="text-gray-400 mb-2">专注生物统计、机器学习，GPA 3.78/4.3，获多项奖学金。</p>
+              <p class="text-gray-200 mb-1">生物科学学士，数学辅修 | 2022/08 - 2024/06</p>
+              <p class="text-gray-300 mb-2">专注生物统计、机器学习，GPA 3.78/4.3，获多项奖学金。</p>
             </div>
           </div>
           <!-- 2024-至今 CMU -->
@@ -129,8 +129,8 @@
             <div class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-black font-bold mr-6">3</div>
             <div>
               <h3 class="text-2xl font-semibold text-white mb-2">卡内基梅隆大学（CMU）</h3>
-              <p class="text-gray-300 mb-1">自动化科学硕士 | 2024/08 - 至今</p>
-              <p class="text-gray-400 mb-2">跨界统计、Go编程与自动化实验，探索AI驱动的科学创新。</p>
+              <p class="text-gray-200 mb-1">自动化科学硕士 | 2024/08 - 至今</p>
+              <p class="text-gray-300 mb-2">跨界统计、Go编程与自动化实验，探索AI驱动的科学创新。</p>
             </div>
           </div>
           <!-- 科研/项目/获奖 -->
@@ -138,7 +138,7 @@
             <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-6">4</div>
             <div>
               <h3 class="text-2xl font-semibold text-white mb-2">科研与项目实践</h3>
-              <ul class="list-disc pl-5 text-gray-300 space-y-1">
+              <ul class="list-disc pl-5 text-gray-200 space-y-1">
                 <li>3D CNN肺结节自动检测、奶牛乳腺炎预测等AI科研项目</li>
                 <li>黑八追分微信小程序、Go粘菌城市交通模拟等创新开发</li>
                 <li>荣获GSU荣誉奖学金、银奖学金、机器人挑战赛三等奖等</li>
@@ -150,7 +150,7 @@
             <div class="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold mr-6">5</div>
             <div>
               <h3 class="text-2xl font-semibold text-white mb-2">创业与自我突破</h3>
-              <ul class="list-disc pl-5 text-gray-300 space-y-1">
+              <ul class="list-disc pl-5 text-gray-200 space-y-1">
                 <li>EGO：AI驱动的教育SaaS平台，获百万种子轮融资</li>
                 <li>奕辰自习室：9个月盈亏平衡，年收入20万+，会员300+</li>
                 <li>自媒体内容创作，粉丝增长率120%，多平台同步运营</li>
