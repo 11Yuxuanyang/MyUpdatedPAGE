@@ -25,9 +25,6 @@
               <router-link to="/contact" class="inline-flex items-center justify-center px-8 py-3 bg-white hover:bg-gray-100 text-dark-background rounded-full font-medium transition duration-150">
                 联系我
               </router-link>
-              <router-link to="/services" class="inline-flex items-center justify-center px-8 py-3 border border-white text-white hover:bg-white hover:bg-opacity-10 rounded-full font-medium transition duration-150">
-                查看服务
-              </router-link>
             </div>
           </div>
           

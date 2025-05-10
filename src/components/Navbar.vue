@@ -80,7 +80,6 @@ export default {
     return {
       mobileMenuOpen: false,
       primaryNavItems: [
-        { name: '服务', path: '/services' },
         { name: '关于', path: '/about' },
         { name: '作品', path: '/projects' },
         { name: '博客', path: '/blog' },
