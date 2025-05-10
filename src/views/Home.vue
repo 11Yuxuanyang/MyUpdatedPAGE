@@ -50,28 +50,6 @@
                 <img src="/images/SWJTU.jpg" alt="西南交通大学" class="w-16 h-16 rounded-lg object-cover" />
               </div>
             </div>
-            
-            <!-- 照片下方的导航索引 -->
-            <div class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-3">
-              <router-link to="/services" class="px-6 py-3 bg-dark-card border border-gray-700 rounded-full text-white text-center hover:bg-white hover:text-dark-background transition duration-200 group">
-                <span class="group-hover:font-medium">全栈开发</span>
-              </router-link>
-              <router-link to="/services" class="px-6 py-3 bg-dark-card border border-gray-700 rounded-full text-white text-center hover:bg-white hover:text-dark-background transition duration-200 group">
-                <span class="group-hover:font-medium">人工智能</span>
-              </router-link>
-              <router-link to="/services" class="px-6 py-3 bg-dark-card border border-gray-700 rounded-full text-white text-center hover:bg-white hover:text-dark-background transition duration-200 group">
-                <span class="group-hover:font-medium">创业管理</span>
-              </router-link>
-              <router-link to="/services" class="px-6 py-3 bg-dark-card border border-gray-700 rounded-full text-white text-center hover:bg-white hover:text-dark-background transition duration-200 group">
-                <span class="group-hover:font-medium">产品设计</span>
-              </router-link>
-              <router-link to="/services" class="px-6 py-3 bg-dark-card border border-gray-700 rounded-full text-white text-center hover:bg-white hover:text-dark-background transition duration-200 group">
-                <span class="group-hover:font-medium">教育科技</span>
-              </router-link>
-              <router-link to="/services" class="px-6 py-3 bg-dark-card border border-gray-700 rounded-full text-white text-center hover:bg-white hover:text-dark-background transition duration-200 group">
-                <span class="group-hover:font-medium">技术咨询</span>
-              </router-link>
-            </div>
           </div>
         </div>
       </div>
