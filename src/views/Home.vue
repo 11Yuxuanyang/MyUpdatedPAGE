@@ -294,73 +294,73 @@
     <section class="bg-black py-24">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-white mb-4">自媒体博主风采</h2>
+          <h2 class="text-4xl font-bold text-white mb-4">EGO 项目深度介绍</h2>
           <p class="text-xl text-dark-text-secondary max-w-3xl mx-auto">
-            展示我在自媒体内容创作、粉丝互动及平台运营中的高光时刻。
+            展示EGO作为AI驱动的教育SaaS平台，如何通过个性化职业服务和AIGC内容工作空间赋能用户。
           </p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- 数据卡片 1: 粉丝增长率 -->
+          <!-- 数据卡片 1: AI驱动创新 -->
           <div class="bg-black rounded-lg p-8 md:p-10 relative overflow-hidden">
-            <h3 class="text-2xl font-bold text-white mb-6">粉丝增长率</h3>
+            <h3 class="text-2xl font-bold text-white mb-6">AI驱动创新</h3>
             <div class="mt-8">
-              <p class="text-7xl md:text-8xl font-bold text-white mb-6">120%</p>
-              <p class="text-gray-300 max-w-md">年度粉丝增长，内容持续吸引新关注</p>
+              <p class="text-7xl md:text-8xl font-bold text-white mb-6">10+ AI模块</p>
+              <p class="text-gray-300 max-w-md">集成先进AI技术，提供个性化学习与职业发展路径。</p>
             </div>
             <div class="absolute -bottom-20 -right-20 w-64 h-64 rounded-full bg-blue-500 opacity-20 blur-3xl"></div>
           </div>
 
-          <!-- 数据卡片 2: 内容发布量 -->
+          <!-- 数据卡片 2: SaaS平台优势 -->
           <div class="bg-black rounded-lg p-8 md:p-10 relative overflow-hidden">
-            <h3 class="text-2xl font-bold text-white mb-6">内容发布量</h3>
+            <h3 class="text-2xl font-bold text-white mb-6">SaaS平台优势</h3>
             <div class="mt-8 flex flex-col items-start">
-              <p class="text-7xl md:text-8xl font-bold text-white mb-6">300+</p>
-              <p class="text-gray-300 max-w-md">原创视频/图文内容，覆盖多个平台</p>
+              <p class="text-7xl md:text-8xl font-bold text-white mb-6">99.9% SLA</p>
+              <p class="text-gray-300 max-w-md">稳定可靠的云服务，支持大规模用户并发与数据安全。</p>
             </div>
             <div class="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-purple-500 opacity-20 blur-3xl"></div>
           </div>
 
-          <!-- 数据卡片 3: 互动量 -->
+          <!-- 数据卡片 3: 市场认可 -->
           <div class="bg-black rounded-lg p-8 md:p-10 relative overflow-hidden">
-            <h3 class="text-2xl font-bold text-white mb-6">互动量</h3>
+            <h3 class="text-2xl font-bold text-white mb-6">市场认可</h3>
             <div class="mt-8 flex flex-col items-start">
-              <p class="text-7xl md:text-8xl font-bold text-white mb-6">50w+</p>
-              <p class="text-gray-300 max-w-md">评论、点赞、转发等粉丝互动总量</p>
+              <p class="text-7xl md:text-8xl font-bold text-white mb-6">百万融资</p>
+              <p class="text-gray-300 max-w-md">获得百万级种子轮融资，验证商业模式与市场潜力。</p>
             </div>
             <div class="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-green-500 opacity-20 blur-3xl"></div>
           </div>
 
-          <!-- 数据卡片 4: 平台覆盖数 -->
+          <!-- 数据卡片 4: 用户价值 -->
           <div class="bg-black rounded-lg p-8 md:p-10 relative overflow-hidden">
-            <h3 class="text-2xl font-bold text-white mb-6">平台覆盖数</h3>
+            <h3 class="text-2xl font-bold text-white mb-6">用户价值</h3>
             <div class="mt-8 flex flex-col items-start">
-              <p class="text-7xl md:text-8xl font-bold text-white mb-6">6+</p>
-              <p class="text-gray-300 max-w-md">主流自媒体平台同步运营</p>
+              <p class="text-7xl md:text-8xl font-bold text-white mb-6">AIGC空间</p>
+              <p class="text-gray-300 max-w-md">提供AIGC内容工作空间，提升创作与学习效率。</p>
             </div>
             <div class="absolute -top-20 -left-20 w-64 h-64 rounded-full bg-red-500 opacity-20 blur-3xl"></div>
           </div>
         </div>
         
-        <!-- 自媒体活动图片展示 -->
+        <!-- EGO 平台核心功能 -->
         <div class="mt-24">
-          <h3 class="text-2xl font-bold text-white mb-10 text-center">内容创作精彩瞬间</h3>
+          <h3 class="text-2xl font-bold text-white mb-10 text-center">EGO 平台核心功能</h3>
           <!-- 大图展示 -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-            <div class="md:col-span-2 aspect-video bg-dark-card rounded-lg overflow-hidden group relative">
+            <div class="md:col-span-2 bg-dark-card rounded-lg overflow-hidden group relative">
               <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
-              <img src="/images/奕辰自习室/481746810090_.pic_hd.jpg" alt="自媒体拍摄现场" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img src="/images/EGO/EGO课程.png" alt="EGO个性化推荐引擎 - 课程示例" class="block w-full h-auto max-h-96 mx-auto transition-transform duration-700 group-hover:scale-110" />
               <div class="absolute bottom-6 left-6">
-                <span class="px-3 py-1 bg-blue-500 text-white text-xs rounded-full">短视频拍摄</span>
-                <h4 class="text-xl font-bold text-white mt-2">高效内容制作流程</h4>
+                <span class="px-3 py-1 bg-blue-500 text-white text-xs rounded-full">AI个性化推荐</span>
+                <h4 class="text-xl font-bold text-white mt-2">智能职业规划与学习路径</h4>
               </div>
             </div>
-            <div class="aspect-video bg-dark-card rounded-lg overflow-hidden group relative">
+            <div class="bg-dark-card rounded-lg overflow-hidden group relative">
               <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
-              <img src="/images/奕辰自习室/491746810093_.pic_hd.jpg" alt="自媒体直播" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img src="/images/EGO/EGO项目.png" alt="EGO AIGC内容工作空间 - 项目示例" class="block w-full h-auto max-h-96 mx-auto transition-transform duration-700 group-hover:scale-110" />
               <div class="absolute bottom-6 left-6">
-                <span class="px-3 py-1 bg-green-500 text-white text-xs rounded-full">直播互动</span>
-                <h4 class="text-xl font-bold text-white mt-2">与粉丝实时交流</h4>
+                <span class="px-3 py-1 bg-green-500 text-white text-xs rounded-full">AIGC创作空间</span>
+                <h4 class="text-xl font-bold text-white mt-2">高效内容生成与协作</h4>
               </div>
             </div>
           </div>
@@ -369,63 +369,63 @@
             <div class="aspect-square bg-purple-900 rounded-lg overflow-hidden group relative">
               <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
               <div class="absolute inset-0 flex items-center justify-center">
-                <span class="text-white text-lg font-bold">内容策划</span>
+                <span class="text-white text-lg font-bold">个性化职业服务</span>
               </div>
             </div>
             <div class="aspect-square bg-blue-900 rounded-lg overflow-hidden group relative">
               <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
               <div class="absolute inset-0 flex items-center justify-center">
-                <span class="text-white text-lg font-bold">剪辑制作</span>
+                <span class="text-white text-lg font-bold">AIGC内容创作</span>
               </div>
             </div>
             <div class="aspect-square bg-green-900 rounded-lg overflow-hidden group relative">
               <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
               <div class="absolute inset-0 flex items-center justify-center">
-                <span class="text-white text-lg font-bold">平台运营</span>
+                <span class="text-white text-lg font-bold">数据驱动洞察</span>
               </div>
             </div>
             <div class="aspect-square bg-red-900 rounded-lg overflow-hidden group relative">
               <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
               <div class="absolute inset-0 flex items-center justify-center">
-                <span class="text-white text-lg font-bold">粉丝互动</span>
+                <span class="text-white text-lg font-bold">灵活学习空间</span>
               </div>
             </div>
           </div>
         </div>
-        <!-- 视频展示 -->
+        <!-- EGO 平台演示与解读 -->
         <div class="mt-24">
-          <h3 class="text-2xl font-bold text-white mb-10 text-center">自媒体视频集锦</h3>
+          <h3 class="text-2xl font-bold text-white mb-10 text-center">EGO 平台演示与解读</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- 视频卡片 1 -->
             <div class="bg-dark-card rounded-lg overflow-hidden">
               <div class="aspect-video bg-gray-900 flex items-center justify-center relative">
-                <img class="w-full h-full object-cover" src="/images/EGO/截屏2025-05-04 上午10.19.38.png" alt="EGO平台预览">
+                <img class="w-full h-full object-cover" src="/images/EGO/截屏2025-05-04 上午10.19.38.png" alt="EGO平台功能演示视频">
               </div>
               <div class="p-6">
-                <h4 class="text-xl font-bold text-white mb-2">爆款短视频案例</h4>
-                <p class="text-gray-400">热门内容创作与传播策略实录</p>
+                <h4 class="text-xl font-bold text-white mb-2">EGO平台核心功能概览</h4>
+                <p class="text-gray-400">深入了解EGO如何赋能教育与职业发展。</p>
               </div>
             </div>
             <!-- 视频内容介绍 -->
             <div class="bg-dark-card rounded-lg overflow-hidden p-8 flex flex-col justify-center">
-              <h4 class="text-xl font-bold text-white mb-4">内容创作与运营亮点</h4>
-              <p class="text-gray-300 mb-6">聚焦内容策划、剪辑、平台分发与粉丝互动，助力账号持续成长。</p>
+              <h4 class="text-xl font-bold text-white mb-4">EGO平台亮点解读</h4>
+              <p class="text-gray-300 mb-6">聚焦AI技术应用、SaaS服务优势、个性化体验与AIGC内容生态。</p>
               <ul class="space-y-3">
                 <li class="flex items-start">
                   <span class="text-blue-400 mr-2">•</span>
-                  <span class="text-gray-300">短视频内容策划与拍摄</span>
+                  <span class="text-gray-300">AI驱动的个性化推荐引擎</span>
                 </li>
                 <li class="flex items-start">
                   <span class="text-green-400 mr-2">•</span>
-                  <span class="text-gray-300">多平台同步分发</span>
+                  <span class="text-gray-300">高效易用的SaaS服务架构</span>
                 </li>
                 <li class="flex items-start">
                   <span class="text-purple-400 mr-2">•</span>
-                  <span class="text-gray-300">数据分析与粉丝运营</span>
+                  <span class="text-gray-300">AIGC内容创作与协作空间</span>
                 </li>
                 <li class="flex items-start">
                   <span class="text-red-400 mr-2">•</span>
-                  <span class="text-gray-300">直播与社群互动</span>
+                  <span class="text-gray-300">全面的职业发展数据支持</span>
                 </li>
               </ul>
             </div>
@@ -446,8 +446,9 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div v-for="(project, index) in featuredProjects" :key="index" class="bg-dark-card rounded-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-purple">
-            <div class="aspect-video bg-primary-dark flex items-center justify-center">
-              <h3 class="text-2xl font-bold text-white">{{ project.title }}</h3>
+            <div class="aspect-video bg-primary-dark flex items-center justify-center relative overflow-hidden">
+              <img v-if="project.image" :src="project.image" :alt="project.title" class="w-full h-full object-cover">
+              <h3 v-else class="text-2xl font-bold text-white px-4 text-center">{{ project.title }}</h3>
             </div>
             <div class="p-8">
               <p class="text-dark-text-secondary mb-6">{{ project.description }}</p>
@@ -509,11 +510,13 @@ export default {
       featuredProjects: [
         {
           title: '黑八追分 - 微信小程序',
+          image: '/黑八/image.png', // 添加图片路径
           description: '为8球台球比赛开发的实时多人记分小程序，支持复杂规则和负分追踪。',
           tags: ['Vue3', 'uniapp', '微信小程序', '前端开发']
         },
         {
           title: '基于Go的粘菌城市交通网络模拟',
+          image: '', // 其他项目可以暂时留空或添加对应图片
           description: '利用Go语言模拟粘菌寻路行为，探索高效城市交通网络设计。',
           tags: ['Go', '并发编程', '生物仿真', '城市规划']
         }
